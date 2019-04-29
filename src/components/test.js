@@ -11,7 +11,6 @@ import { getBookings } from '../actions';
       constructor(props){
           super(props);
           this.state = {
-            bookings: this.props.bookings
           }
       }
 
@@ -44,8 +43,9 @@ import { getBookings } from '../actions';
               <button className="button submit" type="button" onClick={()=>{
                 this.props.getBookings()
               }}>
-                BOOKING LIST: {this.state.bookings}
+                BOOKING LIST:
               </button>
+                {JSON.stringify(this.props.bookings)}
             </h3>
               { this.renderTestContent() }
           </div>
