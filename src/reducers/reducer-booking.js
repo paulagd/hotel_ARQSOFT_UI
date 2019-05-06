@@ -7,7 +7,7 @@ export default function(state = INITIAL_STATE, action) {
   switch (action.type) {
 
     case TYPES.GET_BOOKINGS:
-
+       console.log('ACTIOONNN', action)
       return {
         ...state,
         bookings: action.payload
