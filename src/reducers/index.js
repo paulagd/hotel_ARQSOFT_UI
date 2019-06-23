@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
-import reducerBooking from './reducer-booking';
+import Booking from './reducer-booking';
+import Login from './login';
 
 const rootReducer = combineReducers({
-    reducerBooking
+    Booking,
+    Login
   });
 
 export default rootReducer;
